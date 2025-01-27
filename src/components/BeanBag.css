@@ -1,0 +1,6 @@
+/* Hover Effect for Dropdown */
+li:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  
