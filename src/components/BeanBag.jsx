@@ -14,7 +14,7 @@ const BeanBag = () => {
     };
   return (
     <>
-    <ul style={{ listStyleType: "none", display: "flex", gap: "20px", padding: 0 }}>
+    {/* <ul style={{ listStyleType: "none", display: "flex", gap: "20px", padding: 0 }}>
     <li style={{ position: "relative" }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <NavLink to="/beanbags" style={{ textDecoration: "none", color: "black" }}>BEAN BAGS</NavLink>
     <img src={downarrow} alt="Down Arrow"  style={{marginLeft: "5px",width: "10px",height: "15px", verticalAlign: "middle",}}/>
@@ -54,7 +54,7 @@ const BeanBag = () => {
 
 <li><NavLink to="/collections" style={{ textDecoration: "none", color: "black" }}>COLLECTIONS</NavLink>
 <img src={downarrow} alt="Down Arrow" style={{ marginLeft: "5px", width: "10px", height: "15px", verticalAlign: "middle",}}/></li>
-</ul>
+</ul> */}
     </>
   )
 }

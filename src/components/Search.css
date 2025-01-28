@@ -1,0 +1,25 @@
+.mainDiv {
+    display: flex;
+    align-items: center; /* Align input and icon vertically */
+    justify-content: center; /* Center the entire container */
+    /* padding: 10px; */
+  }
+  
+  .inputField {
+    padding: 12px;
+    width: 198px; 
+    background-color: rgb(239, 238, 238);; 
+    font-weight: 400;
+    /* color: rgb(133, 129, 129); */
+    font-size: 16px;
+    margin: 0;
+    border: none; 
+  }
+  
+  .searchIcon {
+    height: 50px; 
+    width: 60px; 
+    margin-left: -9px; 
+    cursor: pointer; 
+  }
+  
