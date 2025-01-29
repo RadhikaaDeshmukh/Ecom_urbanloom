@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import urbanloom from "../assets/urbanloom.png";
 import "./Navbar.css";
@@ -7,6 +7,7 @@ import serachlogo from "../assets/search.svg";
 import cartlogo from "../assets/cart.png";
 import downarrow from "../assets/downarrow.svg";
 import rightArrow from "../assets/rightArrow.svg";
+import {CartContext} from './CartProvider'
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -14,6 +15,8 @@ const Navbar = () => {
   const [isBeanBagCombosVisible, setIsBeanBagCombosVisible] = useState(false);
   const [isAccessoriesVisible, setIsAccessoriesVisible] = useState(false);
   const [isCollectionVisible, setIsCollectionVisible] = useState(false)
+  const { setIsDrawerOpen } = useContext(CartContext);
+
 
   const handleDropdownMouseEnter = () => setIsDropdownVisible(true);
   const handleDropdownMouseLeave = () => setIsDropdownVisible(false);
@@ -345,11 +348,9 @@ const Navbar = () => {
                     </li>
                 </ul>
                )} 
-
-               
               </li>
             </ul>
-            <ul className="logoList">
+            <ul className="logoList" style={{ display: "flex", listStyleType: "none", alignItems: "center"}}>
               <li>
                 <Link to="/loginPage">
                   <img
@@ -372,7 +373,7 @@ const Navbar = () => {
                   />
                 </Link>
               </li>
-              <li>
+              <li onMouseEnter={() => setIsDrawerOpen(true)} onMouseLeave={() => setIsDrawerOpen(false)} >
                 <Link to="/cart">
                   <img
                     src={cartlogo}

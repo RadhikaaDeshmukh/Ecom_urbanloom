@@ -1,6 +1,7 @@
 import React from 'react'
 import './Search.css'
 import serachfill from '../assets/searchsill.svg'
+import Footer from './Footer'
 
 const Search = () => {
   return (
@@ -10,7 +11,10 @@ const Search = () => {
         <input type="text" className="inputField" placeholder="Search our store" />
         <img src={serachfill} className="searchIcon" alt="Search" />
         </div>
+      <div className='footerclass'>
+      <Footer />
 
+      </div>
 
     </>
   )
