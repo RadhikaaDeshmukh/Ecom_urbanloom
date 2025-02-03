@@ -16,6 +16,7 @@ import sixthcard from '../assets/Card/poufs.jpg'
 import trendingCard from '../assets/binbag.jpg'
 import trendingCard1 from '../assets/binbag2.jpg'
 import { Input } from '@mui/material'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -67,8 +68,8 @@ const Home = () => {
 <div className='homeCardmain'>
   <div>
   <h3>Cotton Bean Bags
-  <span
-    style={{ position: "absolute",bottom: "-10px",left: "50%", transform: "translateX(-50%)", width: "60px", height: "2px", backgroundColor: "skyblue", display: "block", }}/>
+  {/* <span
+    style={{ position: "absolute",bottom: "-10px",left: "50%", transform: "translateX(-50%)", width: "60px", height: "2px", backgroundColor: "skyblue", display: "block", }}/> */}
   </h3>
   </div>
   <div className="card-container">
@@ -111,14 +112,14 @@ const Home = () => {
 <div className='homeCardmain'>
   <div>
   <h3>Trending Products
-  <span
-    style={{position: "absolute",bottom: "-10px",left: "50%", transform: "translateX(-50%)", width: "60px", height: "2px", backgroundColor: "skyblue", display: "block", }}/>
+  {/* <span
+    style={{position: "absolute",bottom: "-10px",left: "50%", transform: "translateX(-50%)", width: "60px", height: "2px", backgroundColor: "skyblue", display: "block", }}/> */}
   </h3>
   </div>
 
 <div className='trendingProducts'>
     <div className="trendingCard">
-      <img src={trendingCard1} alt='trendingCard' className='imgtrending'/>
+      <img src={trendingCard} alt='trendingCard' className='imgtrending'/>
       <p className="paraTrending">Auburn cotton handloom bean bag Cover without beans<br/>
          <b className="oldPrice">Rs. 2,999.00</b> Rs. 2,199.00</p>
     </div>
@@ -128,7 +129,7 @@ const Home = () => {
     <b className="oldPrice">Rs. 2,999.00</b> Rs. 2,199.00</p>
     </div>
     <div className="trendingCard">
-    <img src={trendingCard1} alt='trendingCard' className='imgtrending' />
+    <img src={trendingCard} alt='trendingCard' className='imgtrending' />
     <p className="paraTrending">Kiera XXXL cotton handloom bean bag lounger without beans (Red)<br/>
     <b className="oldPrice">Rs. 2,999.00</b> Rs. 2,299.00</p>
     </div>
@@ -138,7 +139,7 @@ const Home = () => {
     <b className="oldPrice">Rs. 2,999.00</b> Rs. 999.00</p>
     </div>
     <div className="trendingCard">
-    <img src={trendingCard1} alt='trendingCard' className='imgtrending' />
+    <img src={trendingCard} alt='trendingCard' className='imgtrending' />
     <p className="paraTrending">Scarlet cotton handloom bean bag cover & Footstool cover<br/>
     <b className="oldPrice">Rs. 2,999.00</b> Rs. 2,999.00</p>
     </div>
@@ -151,15 +152,23 @@ const Home = () => {
 
 <div className='subscribesec'>
    <h2>Subscribe to our newsletter</h2>
-   <h4>Promotions, new products and sales. Directly to your inbox.
-   <span
-    style={{position: "absolute",bottom: "-10px",left: "50%", transform: "translateX(-50%)", width: "60px", height: "2px", backgroundColor: "skyblue", display: "block", }}/>
-   </h4>
+   <p></p>
+   <p>Promotions, new products and sales. Directly to your inbox.
+   </p>
+<br /><br />
 
-    <Input className='subscribeemail' type='text' placeholder='Your email' /><button type='submit'>SUBSCRIBE</button>
+   <div className='subscribeChilddiv'>
+   <Input className='subscribeemail' type='email' placeholder='Your email' />
+   <button type='submit' className='subscribeBtn'>SUBSCRIBE</button>
+   </div>
 </div>
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<Footer />
 </div>
 </div>
     

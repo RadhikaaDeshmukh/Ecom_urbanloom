@@ -10,6 +10,9 @@ import Cart from './components/Cart';
 import CartProvider from './components/CartProvider';
 import Registartion from './components/Registartion';
 import Home from './components/Home';
+import Footer from './components/Footer';
+import Para from './components/Para';
+import Instagram from './components/Instagram';
 
 
 export const CartContext = createContext();
@@ -17,6 +20,7 @@ export const CartContext = createContext();
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
+    <>
    <CartProvider value={{ isDrawerOpen, setIsDrawerOpen }}>
     <Router>
     <Navbar />
@@ -29,12 +33,15 @@ function App() {
    <Route path="/beanbags" element={<BeanBag />}/> */}
    <Route path="/loginPage" element={<LoginPage />}/>
    <Route path='/registration' element={<Registartion />}/>
-   <Route path="/search" element={<Search />}/>
+   {/* <Route path="/search" element={<Search />}/> */}
    <Route path="/cart" element={<Cart />}/>
+   {/* <Route path='/instagram' element={<Instagram/>} /> */}
    </Routes>
+   
     </div>
     </Router>
    </CartProvider>
+   </>
   )
 }
 

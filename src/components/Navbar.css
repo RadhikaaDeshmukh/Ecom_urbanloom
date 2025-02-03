@@ -20,16 +20,18 @@
     padding: 0;
     /* border: 3px solid black; */
     margin-left: 80px;
+    z-index: 1000; 
   }
   .nav-list li a {
     text-decoration: none;
     color: inherit; 
     font-weight: bold;
-    padding: 15px;
+    padding: 5px;
     font-size: 14px;
   }
   .nav-list li a:hover {
     color: gray; 
+
   }
   .logoList {
     display: flex; 

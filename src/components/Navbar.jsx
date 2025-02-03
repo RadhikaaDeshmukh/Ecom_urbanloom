@@ -19,7 +19,9 @@ const Navbar = () => {
 
 
   const handleDropdownMouseEnter = () => setIsDropdownVisible(true);
-  const handleDropdownMouseLeave = () => setIsDropdownVisible(false);
+  const handleDropdownMouseLeave = () =>{
+    setTimeout(() => setIsDropdownVisible(false),2000);
+  } 
 
   const handleNestedMouseEnter = () => setIsNestedDropdownVisible(true);
   const handleNestedMouseLeave = () => setIsNestedDropdownVisible(false);
@@ -32,6 +34,11 @@ const Navbar = () => {
 
   const handleCollectionMouseEnter = () => setIsCollectionVisible(true);
   const handleCollectionMouseLeave = () => setIsCollectionVisible(false);
+
+// const handleMouseLeave = () => {
+//   setTimeout(() => setIsDropdownVisible(false), 200); // Adds slight delay
+// };
+
 
   return (
     <>
@@ -129,7 +136,7 @@ const Navbar = () => {
                           <li style={{ padding: "5px 2px" }}>
                             <NavLink
                               to="/beanbags/cotton/all-products"
-                              style={{ textDecoration: "none", color: "black" }}
+                              style={{ textDecoration: "none", color: "black"}}
                             >
                               All Products
                             </NavLink>

@@ -135,16 +135,55 @@
     flex-direction: column;
     justify-content: center;
 }
-.oldPrice {
+
+    .oldPrice {
     text-decoration: line-through;
     color: black; /* Optional: Lighten the old price */
   }
 
   .subscribesec{
-    background-color: rgb(239, 202, 202);
+    background-color: rgb(253, 233, 233);
     height: 350PX;
     margin-top: 20px;
+    /* border: 2px solid black; */
+
   }
+
   h2{
-    margin-top: 20px;
+    /* border: 2px solid black; */
+    padding-top: 60px;
   }
+   .subscribeChilddiv { 
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+.subscribeemail {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+    text-decoration: none;
+    border-bottom: none !important;
+}
+.subscribeBtn {
+    color: white !important;
+    width: 150px !important;
+    padding: 10px 5px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.subscribeemail:hover {
+    border: 2px solid black;
+    outline: none;
+}
+
+ 
